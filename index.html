@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css" />
+  </head>
+  <body>
+    <header>
+      <div id="myHeader">
+        <div class="branding">
+          <h1>Sve o <span id="beer">PIVU</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"> Istorijat </a></li>
+            <li><a href="proizvodnja.html"> Proizvodnja </a></li>
+            <li><a href="vrste.html"> Vrste</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="quote">
+        <pre>
+        
+          “Two beer or not two beer"
+           </pre
+        >
+
+        <p>William Shakesbeer</p>
+      </div>
+    </header>
+
+    <div id="history">
+      <img id="glass" src="./Images/beer_transparent.png" alt="beer" />
+
+      <p>
+        <span class="bold">Prvi pisani tragovi</span> o spravljanju piva su
+        ostali očuvani na glinenim tablicama i datiraju još od 6.000 godina p.
+        n. e. i potiču od Sumera. Pivari u vreme Sumeraca su bili ugledni
+        stanovnici dvora. Tokom 1985. ekipa Nacionalnog škotskog muzeja iz
+        Edinburga iskopala je u Rimu, na jednom od Hebridskih ostrva, posudu od
+        terakote iz neolitskog doba s nepoznatim sastojcima. Analizom tog nalaza
+        dobijen je napitak za pivo koje se pravilo od zobi, ječma, meda i
+        paprati. Ovo piće, za koje mnogi tvrde da je zapravo jelo, koristilo se
+        već u praistorijskom razdoblju. Proizvodili su ga i Kelti, Germani,
+        Sloveni i Skiti. Tada se pravilo iz ječma, pšenice, zobi i heljde, a
+        mnogi stari narodi su dodavali i začine: mirođiju i med. <br /><br />
+        Današnji glavni sastojak <span class="bold">hmelj</span> počeo je da se
+        koristi tek u 13. veku. Pivopijska središta u starom veku bila su u
+        Jermeniji, Mesopotamiji i Egiptu. Iz tih područja pivo su posle preuzeli
+        Grci i Rimljani.Prema starim iskopinama i zapisima arheolozi su utvrdili
+        da su stari Vavilonci proizvodili pivo u domaćinstvu još 7.000 godina p.
+        n. e. Imali su 16 sorti piva, a za vrenje su koristili ječmeni šećer i
+        pšenicu. I u sumersko-vavilonskom epu o Gilgamešu se pominje pivo.[16]
+        Odavde se prenela proizvodnja piva u stari Egipat, Persiju, Grčku i
+        druge zemlje. Egipćani su znali da prave pivo već 2.000 godina p. n. e.
+        Artefakti pronađeni u grobnicama pokazuju da je u starom Egiptu
+        proizvodnja piva bila ne samo dobro razvijena, već i komercijalizovana.
+        Najstarija slika koja prikazuje ljude kako piju pivo potiče baš iz
+        Egipta, 3.400 godina p. n. e.[16] Grci su, primajući civilizaciju od
+        Egipćana, naučili i veštinu proizvodnje piva, a za njima i Rimljani i
+        onda ostale evropske zemlje. Na evropski kontinent pivo je preneto
+        dolaskom keltskih plemena iz Azije, negde oko 1.000 godina p. n. e. U
+        tim vremenima pivo je pravljeno iz šećera, ali bez hmelja, tako da je
+        dobijen proizvod bio vrlo kiseo. Tada su u pivo dodavane različite trave
+        - pelin, lupin glog, šafran i dr. Primena hmelja predstavlja važno
+        otkriće i čini osnovu savremene tehnologije piva. Hmelj se prvi put
+        počeo koristiti u Novogorodskoj Rusiji.
+      </p>
+    </div>
+    <div class="background">
+      <p>
+        Reč pivo (bira, bier, ber, bicre) nastala je u manastirima negde između
+        šestog i sedmog veka, u vreme kad se pivu pri varenju počeo dodavati
+        hmelj. U srednjem veku proizvodnjom piva bavili su se kaluđeri. Kaluđeri
+        su bili prvi koji su pivu pridodali hmelj - iz „medicinskih“ razloga, a
+        i radi boljeg konzerviranja. Ono je proglašeno „hrišćanskim lekovitim
+        napitkom“, da bi se uključilo u kaluđersku hranu, a smelo se piti i u
+        dane posta. Nema podataka da se pivo proizvodilo u pravoslavnim
+        manastirima. Usavršavanje parne mašine vrlo se povoljno odrazilo na
+        razvoj pivarstva, kao i pronalazak mašine za hlađenje. Zahvaljujući
+        najvažnijim naučno-tehničkim dostignućima u 19. veku, stvorene su osnove
+        za pretvaranje usitnjenih preduzeća u velike fabrike piva. Najveći
+        proizvođači su Nemačka, Ujedinjeno Kraljevstvo, SAD, zatim Češka,
+        Belgija i Irska.
+      </p>
+    </div>
+    <div id="footer">
+      <h1>
+        Sve o <span id="beer">PIVU</span>
+        <span id="copy">, Copyright &copy 2020</span>
+      </h1>
+    </div>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
